@@ -204,7 +204,7 @@ we were working on tests. Any string could be used in the place of address. Let 
 Every string can be technically considered an address. However, not every string is an actual existing blockchain
 address. When we keep anything of type `Addr` in the contract, we assume it is a proper address in the blockchain.
 That is why the [`addr_validate`](https://docs.rs/cosmwasm-std/1.0.0/cosmwasm_std/trait.Api.html#tymethod.addr_validate)
-function exits - to check this precondition.
+function exists - to check this precondition.
 
 Having data to store, we use the [`save`](https://docs.rs/cw-storage-plus/0.13.4/cw_storage_plus/struct.Item.html#method.save)
 function to write it into the contract state. Note that the first argument of `save` is
